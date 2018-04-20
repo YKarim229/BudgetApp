@@ -11,40 +11,20 @@
 		1B101AC0207363ED002B8046 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B101ABE207363ED002B8046 /* Main.storyboard */; };
 		1B101AC2207363ED002B8046 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B101AC1207363ED002B8046 /* Assets.xcassets */; };
 		1B101AC5207363ED002B8046 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B101AC3207363ED002B8046 /* LaunchScreen.storyboard */; };
-		1B101AD02073650F002B8046 /* icons8-menu-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B101ACE2073650F002B8046 /* icons8-menu-32.png */; };
-		1B101AD12073650F002B8046 /* icons8-add-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B101ACF2073650F002B8046 /* icons8-add-32.png */; };
-		1B101AD520736599002B8046 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B101AD220736599002B8046 /* logo.png */; };
-		1B101AD620736599002B8046 /* 960 1600 b.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B101AD320736599002B8046 /* 960 1600 b.png */; };
-		1B101AD720736599002B8046 /* 960 1600.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B101AD420736599002B8046 /* 960 1600.png */; };
 		1B101ADC20736AA3002B8046 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B101ADB20736AA3002B8046 /* SWRevealViewController.m */; };
 		1B101AE02073711F002B8046 /* NewExpenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B101ADF2073711F002B8046 /* NewExpenseViewController.swift */; };
-		1B101AF120737A65002B8046 /* ic_close_red.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B101AE120737A53002B8046 /* ic_close_red.png */; };
-		1B101AF220737A65002B8046 /* ic_dashboard.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B101AE220737A54002B8046 /* ic_dashboard.png */; };
-		1B101AF320737A65002B8046 /* ic_access_time.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B101AE320737A55002B8046 /* ic_access_time.png */; };
-		1B101AF420737A65002B8046 /* ic_notifications.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B101AE420737A56002B8046 /* ic_notifications.png */; };
-		1B101AF520737A65002B8046 /* ic_checkbox_checked.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B101AE520737A57002B8046 /* ic_checkbox_checked.png */; };
-		1B101AF620737A65002B8046 /* ic_warning.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B101AE620737A59002B8046 /* ic_warning.png */; };
-		1B101AF720737A65002B8046 /* ic_auto_renew_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B101AE720737A59002B8046 /* ic_auto_renew_white.png */; };
-		1B101AF820737A65002B8046 /* ic_date_range.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B101AE820737A5B002B8046 /* ic_date_range.png */; };
-		1B101AF920737A65002B8046 /* ic_apps.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B101AE920737A5C002B8046 /* ic_apps.png */; };
-		1B101AFA20737A65002B8046 /* ic_delete.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B101AEA20737A5D002B8046 /* ic_delete.png */; };
-		1B101AFB20737A65002B8046 /* ic_exit.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B101AEB20737A5E002B8046 /* ic_exit.png */; };
-		1B101AFC20737A65002B8046 /* ic_settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B101AEC20737A5F002B8046 /* ic_settings.png */; };
-		1B101AFD20737A65002B8046 /* ic_add_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B101AED20737A60002B8046 /* ic_add_white.png */; };
-		1B101AFE20737A65002B8046 /* ic_checkbox.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B101AEE20737A62002B8046 /* ic_checkbox.png */; };
-		1B101AFF20737A65002B8046 /* ic_arrow_down_green.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B101AEF20737A63002B8046 /* ic_arrow_down_green.png */; };
-		1B101B0020737A65002B8046 /* ic_dollar.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B101AF020737A64002B8046 /* ic_dollar.png */; };
 		1B6DBC0820751F920000A995 /* ExpensesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6DBC0720751F920000A995 /* ExpensesViewController.swift */; };
-		1B6DBC0A20751FCD0000A995 /* budgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6DBC0920751FCD0000A995 /* budgetViewController.swift */; };
-		1B6DBC0C207520080000A995 /* configurationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6DBC0B207520080000A995 /* configurationTableViewController.swift */; };
-		1B6DBC0E207520530000A995 /* seuilsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6DBC0D207520530000A995 /* seuilsViewController.swift */; };
+		1B6DBC0A20751FCD0000A995 /* BudgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6DBC0920751FCD0000A995 /* BudgetViewController.swift */; };
+		1B6DBC0C207520080000A995 /* ConfigurationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6DBC0B207520080000A995 /* ConfigurationTableViewController.swift */; };
+		1B6DBC0E207520530000A995 /* ThresholdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6DBC0D207520530000A995 /* ThresholdViewController.swift */; };
 		1B757C282089CE250000512C /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B757C272089CE250000512C /* LogInViewController.swift */; };
-		1B757C2A2089CEDD0000512C /* inscriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B757C292089CEDD0000512C /* inscriptionViewController.swift */; };
-		1B757C2D2089D6930000512C /* budgetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B757C2B2089D6930000512C /* budgetTableViewCell.swift */; };
-		1B757C2E2089D6930000512C /* budgetTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B757C2C2089D6930000512C /* budgetTableViewCell.xib */; };
-		1B757C362089F44A0000512C /* expensesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B757C342089F44A0000512C /* expensesTableViewCell.swift */; };
-		1B757C372089F44A0000512C /* expensesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B757C352089F44A0000512C /* expensesTableViewCell.xib */; };
-		1B757C392089FE290000512C /* homeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B757C382089FE290000512C /* homeViewController.swift */; };
+		1B757C2A2089CEDD0000512C /* InscriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B757C292089CEDD0000512C /* InscriptionViewController.swift */; };
+		1B757C2D2089D6930000512C /* BudgetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B757C2B2089D6930000512C /* BudgetTableViewCell.swift */; };
+		1B757C2E2089D6930000512C /* BudgetTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B757C2C2089D6930000512C /* BudgetTableViewCell.xib */; };
+		1B757C362089F44A0000512C /* ExpensesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B757C342089F44A0000512C /* ExpensesTableViewCell.swift */; };
+		1B757C372089F44A0000512C /* ExpensesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B757C352089F44A0000512C /* ExpensesTableViewCell.xib */; };
+		1B757C392089FE290000512C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B757C382089FE290000512C /* HomeViewController.swift */; };
+		E2147E7D208A541100D02C86 /* ViewSetupable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2147E7C208A541100D02C86 /* ViewSetupable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,42 +34,22 @@
 		1B101AC1207363ED002B8046 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B101AC4207363ED002B8046 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B101AC6207363ED002B8046 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1B101ACE2073650F002B8046 /* icons8-menu-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-menu-32.png"; sourceTree = "<group>"; };
-		1B101ACF2073650F002B8046 /* icons8-add-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-add-32.png"; sourceTree = "<group>"; };
-		1B101AD220736599002B8046 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
-		1B101AD320736599002B8046 /* 960 1600 b.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "960 1600 b.png"; sourceTree = "<group>"; };
-		1B101AD420736599002B8046 /* 960 1600.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "960 1600.png"; sourceTree = "<group>"; };
 		1B101AD920736AA3002B8046 /* BudgetApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BudgetApp-Bridging-Header.h"; sourceTree = "<group>"; };
 		1B101ADA20736AA3002B8046 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		1B101ADB20736AA3002B8046 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		1B101ADF2073711F002B8046 /* NewExpenseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewExpenseViewController.swift; sourceTree = "<group>"; };
-		1B101AE120737A53002B8046 /* ic_close_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_close_red.png; sourceTree = "<group>"; };
-		1B101AE220737A54002B8046 /* ic_dashboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_dashboard.png; sourceTree = "<group>"; };
-		1B101AE320737A55002B8046 /* ic_access_time.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_access_time.png; sourceTree = "<group>"; };
-		1B101AE420737A56002B8046 /* ic_notifications.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_notifications.png; sourceTree = "<group>"; };
-		1B101AE520737A57002B8046 /* ic_checkbox_checked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_checkbox_checked.png; sourceTree = "<group>"; };
-		1B101AE620737A59002B8046 /* ic_warning.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_warning.png; sourceTree = "<group>"; };
-		1B101AE720737A59002B8046 /* ic_auto_renew_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_auto_renew_white.png; sourceTree = "<group>"; };
-		1B101AE820737A5B002B8046 /* ic_date_range.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_date_range.png; sourceTree = "<group>"; };
-		1B101AE920737A5C002B8046 /* ic_apps.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_apps.png; sourceTree = "<group>"; };
-		1B101AEA20737A5D002B8046 /* ic_delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_delete.png; sourceTree = "<group>"; };
-		1B101AEB20737A5E002B8046 /* ic_exit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_exit.png; sourceTree = "<group>"; };
-		1B101AEC20737A5F002B8046 /* ic_settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_settings.png; sourceTree = "<group>"; };
-		1B101AED20737A60002B8046 /* ic_add_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_add_white.png; sourceTree = "<group>"; };
-		1B101AEE20737A62002B8046 /* ic_checkbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_checkbox.png; sourceTree = "<group>"; };
-		1B101AEF20737A63002B8046 /* ic_arrow_down_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_arrow_down_green.png; sourceTree = "<group>"; };
-		1B101AF020737A64002B8046 /* ic_dollar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_dollar.png; sourceTree = "<group>"; };
 		1B6DBC0720751F920000A995 /* ExpensesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesViewController.swift; sourceTree = "<group>"; };
-		1B6DBC0920751FCD0000A995 /* budgetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = budgetViewController.swift; sourceTree = "<group>"; };
-		1B6DBC0B207520080000A995 /* configurationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = configurationTableViewController.swift; sourceTree = "<group>"; };
-		1B6DBC0D207520530000A995 /* seuilsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = seuilsViewController.swift; sourceTree = "<group>"; };
+		1B6DBC0920751FCD0000A995 /* BudgetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetViewController.swift; sourceTree = "<group>"; };
+		1B6DBC0B207520080000A995 /* ConfigurationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationTableViewController.swift; sourceTree = "<group>"; };
+		1B6DBC0D207520530000A995 /* ThresholdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThresholdViewController.swift; sourceTree = "<group>"; };
 		1B757C272089CE250000512C /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
-		1B757C292089CEDD0000512C /* inscriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = inscriptionViewController.swift; sourceTree = "<group>"; };
-		1B757C2B2089D6930000512C /* budgetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = budgetTableViewCell.swift; sourceTree = "<group>"; };
-		1B757C2C2089D6930000512C /* budgetTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = budgetTableViewCell.xib; sourceTree = "<group>"; };
-		1B757C342089F44A0000512C /* expensesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = expensesTableViewCell.swift; sourceTree = "<group>"; };
-		1B757C352089F44A0000512C /* expensesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = expensesTableViewCell.xib; sourceTree = "<group>"; };
-		1B757C382089FE290000512C /* homeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeViewController.swift; sourceTree = "<group>"; };
+		1B757C292089CEDD0000512C /* InscriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InscriptionViewController.swift; sourceTree = "<group>"; };
+		1B757C2B2089D6930000512C /* BudgetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetTableViewCell.swift; sourceTree = "<group>"; };
+		1B757C2C2089D6930000512C /* BudgetTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BudgetTableViewCell.xib; sourceTree = "<group>"; };
+		1B757C342089F44A0000512C /* ExpensesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesTableViewCell.swift; sourceTree = "<group>"; };
+		1B757C352089F44A0000512C /* ExpensesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExpensesTableViewCell.xib; sourceTree = "<group>"; };
+		1B757C382089FE290000512C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E2147E7C208A541100D02C86 /* ViewSetupable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewSetupable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,42 +82,17 @@
 		1B101AB9207363ED002B8046 /* BudgetApp */ = {
 			isa = PBXGroup;
 			children = (
-				1B101AD820736682002B8046 /* Main */,
-				1B101AC1207363ED002B8046 /* Assets.xcassets */,
-				1B101AC3207363ED002B8046 /* LaunchScreen.storyboard */,
-				1B101AC6207363ED002B8046 /* Info.plist */,
+				E2147E7E208A5E7F00D02C86 /* Application */,
+				E2147E7B208A540100D02C86 /* Extensions */,
+				E2147E7A208A53F900D02C86 /* Protocols */,
+				E26F8699208A4C70005FB915 /* Controller */,
+				E26F8698208A4C6C005FB915 /* View */,
+				E26F8697208A4C66005FB915 /* Model */,
+				E2147E78208A51A500D02C86 /* Storyboards */,
+				E2147E79208A51D700D02C86 /* Resources */,
 				1B101ACD207364B8002B8046 /* ObjC */,
-				1B101ACC207364A4002B8046 /* Pictures */,
 			);
 			path = BudgetApp;
-			sourceTree = "<group>";
-		};
-		1B101ACC207364A4002B8046 /* Pictures */ = {
-			isa = PBXGroup;
-			children = (
-				1B101AE320737A55002B8046 /* ic_access_time.png */,
-				1B101AED20737A60002B8046 /* ic_add_white.png */,
-				1B101AE920737A5C002B8046 /* ic_apps.png */,
-				1B101AEF20737A63002B8046 /* ic_arrow_down_green.png */,
-				1B101AE720737A59002B8046 /* ic_auto_renew_white.png */,
-				1B101AE520737A57002B8046 /* ic_checkbox_checked.png */,
-				1B101AEE20737A62002B8046 /* ic_checkbox.png */,
-				1B101AE120737A53002B8046 /* ic_close_red.png */,
-				1B101AE220737A54002B8046 /* ic_dashboard.png */,
-				1B101AE820737A5B002B8046 /* ic_date_range.png */,
-				1B101AEA20737A5D002B8046 /* ic_delete.png */,
-				1B101AF020737A64002B8046 /* ic_dollar.png */,
-				1B101AEB20737A5E002B8046 /* ic_exit.png */,
-				1B101AE420737A56002B8046 /* ic_notifications.png */,
-				1B101AEC20737A5F002B8046 /* ic_settings.png */,
-				1B101AE620737A59002B8046 /* ic_warning.png */,
-				1B101AD320736599002B8046 /* 960 1600 b.png */,
-				1B101AD420736599002B8046 /* 960 1600.png */,
-				1B101AD220736599002B8046 /* logo.png */,
-				1B101ACF2073650F002B8046 /* icons8-add-32.png */,
-				1B101ACE2073650F002B8046 /* icons8-menu-32.png */,
-			);
-			path = Pictures;
 			sourceTree = "<group>";
 		};
 		1B101ACD207364B8002B8046 /* ObjC */ = {
@@ -170,50 +105,95 @@
 			path = ObjC;
 			sourceTree = "<group>";
 		};
-		1B101AD820736682002B8046 /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				1B101ABE207363ED002B8046 /* Main.storyboard */,
-				1B757C272089CE250000512C /* LogInViewController.swift */,
-				1B757C292089CEDD0000512C /* inscriptionViewController.swift */,
-				1B101ADD207370DF002B8046 /* Dépenses */,
-				1B101ADE207370E8002B8046 /* Budget */,
-				1B757C332089E0AE0000512C /* Seuils */,
-				1B101ABA207363ED002B8046 /* AppDelegate.swift */,
-				1B6DBC0B207520080000A995 /* configurationTableViewController.swift */,
-				1B757C382089FE290000512C /* homeViewController.swift */,
-			);
-			path = Main;
-			sourceTree = "<group>";
-		};
-		1B101ADD207370DF002B8046 /* Dépenses */ = {
+		1B101ADD207370DF002B8046 /* Spending */ = {
 			isa = PBXGroup;
 			children = (
 				1B6DBC0720751F920000A995 /* ExpensesViewController.swift */,
 				1B101ADF2073711F002B8046 /* NewExpenseViewController.swift */,
-				1B757C342089F44A0000512C /* expensesTableViewCell.swift */,
-				1B757C352089F44A0000512C /* expensesTableViewCell.xib */,
 			);
-			name = "Dépenses";
+			name = Spending;
 			path = "Dépenses";
 			sourceTree = "<group>";
 		};
-		1B101ADE207370E8002B8046 /* Budget */ = {
+		E2147E77208A4F7F00D02C86 /* TableViewCells */ = {
 			isa = PBXGroup;
 			children = (
-				1B6DBC0920751FCD0000A995 /* budgetViewController.swift */,
-				1B757C2B2089D6930000512C /* budgetTableViewCell.swift */,
-				1B757C2C2089D6930000512C /* budgetTableViewCell.xib */,
+				1B757C2B2089D6930000512C /* BudgetTableViewCell.swift */,
+				1B757C2C2089D6930000512C /* BudgetTableViewCell.xib */,
+				1B757C342089F44A0000512C /* ExpensesTableViewCell.swift */,
+				1B757C352089F44A0000512C /* ExpensesTableViewCell.xib */,
 			);
-			path = Budget;
+			path = TableViewCells;
 			sourceTree = "<group>";
 		};
-		1B757C332089E0AE0000512C /* Seuils */ = {
+		E2147E78208A51A500D02C86 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				1B6DBC0D207520530000A995 /* seuilsViewController.swift */,
+				1B101ABE207363ED002B8046 /* Main.storyboard */,
+				1B101AC3207363ED002B8046 /* LaunchScreen.storyboard */,
 			);
-			path = Seuils;
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		E2147E79208A51D700D02C86 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1B101AC1207363ED002B8046 /* Assets.xcassets */,
+				1B101AC6207363ED002B8046 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E2147E7A208A53F900D02C86 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				E2147E7C208A541100D02C86 /* ViewSetupable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		E2147E7B208A540100D02C86 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E2147E7E208A5E7F00D02C86 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				1B101ABA207363ED002B8046 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		E26F8697208A4C66005FB915 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E26F8698208A4C6C005FB915 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E2147E77208A4F7F00D02C86 /* TableViewCells */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E26F8699208A4C70005FB915 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1B101ADD207370DF002B8046 /* Spending */,
+				1B6DBC0D207520530000A995 /* ThresholdViewController.swift */,
+				1B6DBC0920751FCD0000A995 /* BudgetViewController.swift */,
+				1B757C382089FE290000512C /* HomeViewController.swift */,
+				1B6DBC0B207520080000A995 /* ConfigurationTableViewController.swift */,
+				1B757C292089CEDD0000512C /* InscriptionViewController.swift */,
+				1B757C272089CE250000512C /* LogInViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,7 +223,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "PHP AFRIQUE";
 				TargetAttributes = {
 					1B101AB6207363ED002B8046 = {
@@ -276,32 +256,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B101AFB20737A65002B8046 /* ic_exit.png in Resources */,
-				1B101AF420737A65002B8046 /* ic_notifications.png in Resources */,
-				1B101AF220737A65002B8046 /* ic_dashboard.png in Resources */,
 				1B101AC5207363ED002B8046 /* LaunchScreen.storyboard in Resources */,
-				1B101AF120737A65002B8046 /* ic_close_red.png in Resources */,
-				1B101AD02073650F002B8046 /* icons8-menu-32.png in Resources */,
-				1B101AFC20737A65002B8046 /* ic_settings.png in Resources */,
-				1B101AFD20737A65002B8046 /* ic_add_white.png in Resources */,
-				1B101AD520736599002B8046 /* logo.png in Resources */,
-				1B101B0020737A65002B8046 /* ic_dollar.png in Resources */,
-				1B101AFA20737A65002B8046 /* ic_delete.png in Resources */,
-				1B101AD620736599002B8046 /* 960 1600 b.png in Resources */,
-				1B101AD12073650F002B8046 /* icons8-add-32.png in Resources */,
-				1B101AF920737A65002B8046 /* ic_apps.png in Resources */,
-				1B101AF320737A65002B8046 /* ic_access_time.png in Resources */,
-				1B101AFF20737A65002B8046 /* ic_arrow_down_green.png in Resources */,
-				1B101AF820737A65002B8046 /* ic_date_range.png in Resources */,
-				1B101AD720736599002B8046 /* 960 1600.png in Resources */,
-				1B757C2E2089D6930000512C /* budgetTableViewCell.xib in Resources */,
-				1B101AFE20737A65002B8046 /* ic_checkbox.png in Resources */,
-				1B101AF620737A65002B8046 /* ic_warning.png in Resources */,
+				1B757C2E2089D6930000512C /* BudgetTableViewCell.xib in Resources */,
 				1B101AC2207363ED002B8046 /* Assets.xcassets in Resources */,
 				1B101AC0207363ED002B8046 /* Main.storyboard in Resources */,
-				1B101AF520737A65002B8046 /* ic_checkbox_checked.png in Resources */,
-				1B757C372089F44A0000512C /* expensesTableViewCell.xib in Resources */,
-				1B101AF720737A65002B8046 /* ic_auto_renew_white.png in Resources */,
+				1B757C372089F44A0000512C /* ExpensesTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,18 +271,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B757C2D2089D6930000512C /* budgetTableViewCell.swift in Sources */,
-				1B6DBC0E207520530000A995 /* seuilsViewController.swift in Sources */,
+				1B757C2D2089D6930000512C /* BudgetTableViewCell.swift in Sources */,
+				E2147E7D208A541100D02C86 /* ViewSetupable.swift in Sources */,
+				1B6DBC0E207520530000A995 /* ThresholdViewController.swift in Sources */,
 				1B757C282089CE250000512C /* LogInViewController.swift in Sources */,
 				1B101ABB207363ED002B8046 /* AppDelegate.swift in Sources */,
 				1B101AE02073711F002B8046 /* NewExpenseViewController.swift in Sources */,
-				1B6DBC0A20751FCD0000A995 /* budgetViewController.swift in Sources */,
+				1B6DBC0A20751FCD0000A995 /* BudgetViewController.swift in Sources */,
 				1B6DBC0820751F920000A995 /* ExpensesViewController.swift in Sources */,
-				1B757C392089FE290000512C /* homeViewController.swift in Sources */,
-				1B757C362089F44A0000512C /* expensesTableViewCell.swift in Sources */,
+				1B757C392089FE290000512C /* HomeViewController.swift in Sources */,
+				1B757C362089F44A0000512C /* ExpensesTableViewCell.swift in Sources */,
 				1B101ADC20736AA3002B8046 /* SWRevealViewController.m in Sources */,
-				1B6DBC0C207520080000A995 /* configurationTableViewController.swift in Sources */,
-				1B757C2A2089CEDD0000512C /* inscriptionViewController.swift in Sources */,
+				1B6DBC0C207520080000A995 /* ConfigurationTableViewController.swift in Sources */,
+				1B757C2A2089CEDD0000512C /* InscriptionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,6 +323,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -370,6 +331,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -420,6 +382,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -427,6 +390,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -463,7 +427,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L9L72R78Y3;
-				INFOPLIST_FILE = BudgetApp/Info.plist;
+				INFOPLIST_FILE = BudgetApp/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.milek.pawel.BudgetApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -481,7 +445,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L9L72R78Y3;
-				INFOPLIST_FILE = BudgetApp/Info.plist;
+				INFOPLIST_FILE = BudgetApp/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.milek.pawel.BudgetApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
