@@ -8,8 +8,9 @@
 
 import UIKit
 
-class BudgetViewController: UIViewController, UITableViewDelegate {
-  @IBOutlet weak var Open: UIBarButtonItem!
+class BudgetViewController: UIViewController {
+  @IBOutlet weak var openMenuBarButton: UIBarButtonItem!
+  @IBOutlet weak var addBudgetBarButton: UIBarButtonItem!
   @IBOutlet weak var budgetTableView: UITableView!
   
   private lazy var budgetItems: [Budget] = {
@@ -24,7 +25,7 @@ class BudgetViewController: UIViewController, UITableViewDelegate {
     
     return budgets
   }()
-  
+
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -37,19 +38,34 @@ class BudgetViewController: UIViewController, UITableViewDelegate {
 extension BudgetViewController: ViewSetupable {
   
   func setup() {
-    budgetTableView.register(cell: BudgetTableViewCell.self)
+    registerTableViewCell()
+    assignTableViewDelegate()
     
-    budgetTableView.dataSource = self
-    budgetTableView.delegate = self
     
+    // MARK: What is that??
     if self.revealViewController() != nil {
-      Open.target = self.revealViewController()
-      Open.action = Selector("revealToggle:")
+      openMenuBarButton.target = self.revealViewController()
+      openMenuBarButton.action = Selector("revealToggle:")
       self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
       // Do any additional setup after loading the view.
     }
   }
   
+}
+
+
+// MARK: - Register tableView cell
+private extension BudgetViewController {
+  
+  func registerTableViewCell() {
+    budgetTableView.register(cell: BudgetTableViewCell.self)
+  }
+  
+  
+  func assignTableViewDelegate() {
+    budgetTableView.dataSource = self
+    budgetTableView.delegate = self
+  }
   
 }
 
@@ -66,6 +82,32 @@ extension BudgetViewController: UITableViewDataSource {
     cell.configurate(by: budgetItems[indexPath.row])
 
     return cell
+  }
+  
+}
+
+
+// MARK: UITableViewDataSource delegate
+extension BudgetViewController: UITableViewDelegate {
+  
+  func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    return 60.0
+  }
+  
+}
+
+
+// MARK: Actions
+extension BudgetViewController {
+  
+  @IBAction func openMenuBarButtonPressed(_ sender: UIBarButtonItem) {
+    // TODO: Implement logic
+    print("openMenuBarButtonPressed")
+  }
+  
+  @IBAction func addBudgetBarButtonPressed(_ sender: UIBarButtonItem) {
+    // TODO: Implement logic
+    print("addBudgetBarButtonPressed")
   }
   
 }

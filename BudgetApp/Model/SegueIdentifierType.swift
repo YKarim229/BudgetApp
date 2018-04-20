@@ -9,5 +9,6 @@
 import Foundation
 
 enum SegueIdentifierType: String {
-  case tmp = "tmp"
+  case inscription = "InscriptionSegue"
+  case revealMenu = "RevealMenuSegue"
 }

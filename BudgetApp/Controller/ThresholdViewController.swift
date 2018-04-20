@@ -26,6 +26,7 @@ class ThresholdViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    
     if self.revealViewController() != nil {
       openBarButtonItem.target = self.revealViewController()
       openBarButtonItem.action = Selector("revealToggle:")
