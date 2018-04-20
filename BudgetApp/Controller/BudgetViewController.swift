@@ -12,10 +12,19 @@ class BudgetViewController: UIViewController, UITableViewDelegate {
   @IBOutlet weak var Open: UIBarButtonItem!
   @IBOutlet weak var budgetTableView: UITableView!
   
-  private let budgets = ["Budget 1", "Budget du mois d'Avril", "Budget du mois de Mai", "Budget du mois de Juin",  "Budget du mois de Juillet",  "Budget du mois de Septembre", "Budget 2"]
-  private let periods = ["du 19/03/2018 au 29/03/2018", "du 01/04/2018 au 30/04/2018", "du 01/05/2018 au 31/05/2018", "du 01/06/2018 au 30/06/2018", "du 01/07/2018 au 30/07/2018", "du 01/09/2018 au 30/09/2018", "du 01/02/2019 au 30/02/2019"]
-  private let amounts = ["87.000 XOF", "120.000 XOF", "112.500 XOF", "144.700 XOF", "120.000 XOF", "167.000 XOF", "92.000 XOF" ]
-  private let cellIdentifier = "BudgetTableViewCell"
+  private lazy var budgetItems: [Budget] = {
+    var budgets = [Budget]()
+    budgets.append(Budget(title: "Budget 1", period: ("19/03/2018", "29/03/2018"), amount: 87.00))
+    budgets.append(Budget(title: "Budget du mois d'Avril", period: ("01/04/2018", "30/04/2018"), amount: 120.00))
+    budgets.append(Budget(title: "Budget du mois de Mai", period: ("01/05/2018", "31/05/2018"), amount: 112.50))
+    budgets.append(Budget(title: "Budget du mois de Juin", period: ("01/06/2018", "30/06/2018"), amount: 144.70))
+    budgets.append(Budget(title: "Budget du mois de Juillet", period: ("01/07/2018", "29/03/2018"), amount: 120.00))
+    budgets.append(Budget(title: "Budget du mois de Septembre", period: ("19/03/2018", "29/03/2018"), amount: 167.00))
+    budgets.append(Budget(title: "Budget 2", period: ("19/03/2018", "29/03/2018"), amount: 92.00))
+    
+    return budgets
+  }()
+  
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -28,8 +37,7 @@ class BudgetViewController: UIViewController, UITableViewDelegate {
 extension BudgetViewController: ViewSetupable {
   
   func setup() {
-    let cellNib = UINib(nibName: cellIdentifier, bundle: nil)
-    budgetTableView.register(cellNib, forCellReuseIdentifier: cellIdentifier)
+    budgetTableView.register(cell: BudgetTableViewCell.self)
     
     budgetTableView.dataSource = self
     budgetTableView.delegate = self
@@ -50,16 +58,13 @@ extension BudgetViewController: ViewSetupable {
 extension BudgetViewController: UITableViewDataSource {
   
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return budgets.count
+    return budgetItems.count
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! BudgetTableViewCell
-    
-    cell.titleLabel.text = budgets[indexPath.row]
-    cell.dateLabel.text = periods[indexPath.row]
-    cell.amountLabel.text = amounts[indexPath.row]
-    
+    let cell = tableView.dequeueCell(cell: BudgetTableViewCell.self, for: indexPath)
+    cell.configurate(by: budgetItems[indexPath.row])
+
     return cell
   }
   

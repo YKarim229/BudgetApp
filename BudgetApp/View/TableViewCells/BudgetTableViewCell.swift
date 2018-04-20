@@ -9,9 +9,17 @@
 import UIKit
 
 class BudgetTableViewCell: UITableViewCell {
-  @IBOutlet var titleLabel: UILabel!
-  @IBOutlet var dateLabel: UILabel!
-  @IBOutlet var amountLabel: UILabel!
+  @IBOutlet private var titleLabel: UILabel!
+  @IBOutlet private var dateLabel: UILabel!
+  @IBOutlet private var amountLabel: UILabel!
+  
+  private var item: Budget? {
+    didSet {
+      titleLabel.text = item?.title
+      dateLabel.text = item?.periodDescription
+      amountLabel.text = item?.amountWithCurrency
+    }
+  }
   
   
   override func awakeFromNib() {
@@ -23,5 +31,14 @@ class BudgetTableViewCell: UITableViewCell {
     titleLabel.text = ""
     dateLabel.text = ""
     amountLabel.text = ""
+  }
+}
+
+
+// MARK: Configurate cell
+extension BudgetTableViewCell {
+  
+  func configurate(by item: Budget) {
+    self.item = item
   }
 }

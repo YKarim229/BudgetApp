@@ -24,7 +24,37 @@
 		1B757C362089F44A0000512C /* ExpensesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B757C342089F44A0000512C /* ExpensesTableViewCell.swift */; };
 		1B757C372089F44A0000512C /* ExpensesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B757C352089F44A0000512C /* ExpensesTableViewCell.xib */; };
 		1B757C392089FE290000512C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B757C382089FE290000512C /* HomeViewController.swift */; };
+		35FA9C8CBF5CA58E3A63FA72 /* Pods_BudgetApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9E9A13824D68C12857F1B59 /* Pods_BudgetApp.framework */; };
 		E2147E7D208A541100D02C86 /* ViewSetupable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2147E7C208A541100D02C86 /* ViewSetupable.swift */; };
+		E2147E80208A5F4100D02C86 /* CellDequeueble.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2147E7F208A5F4100D02C86 /* CellDequeueble.swift */; };
+		E2147E82208A5F5900D02C86 /* Registrable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2147E81208A5F5900D02C86 /* Registrable.swift */; };
+		E2147E84208A5F7600D02C86 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2147E83208A5F7600D02C86 /* NibLoadable.swift */; };
+		E2147E86208A5F8E00D02C86 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2147E85208A5F8E00D02C86 /* ReusableView.swift */; };
+		E2147E88208A5FA600D02C86 /* UserInterfaceCheckable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2147E87208A5FA600D02C86 /* UserInterfaceCheckable.swift */; };
+		E2147E8A208A5FCC00D02C86 /* UICollectionView+CellDequeueble.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2147E89208A5FCC00D02C86 /* UICollectionView+CellDequeueble.swift */; };
+		E2147E8C208A5FE100D02C86 /* UICollectionView+Registrable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2147E8B208A5FE100D02C86 /* UICollectionView+Registrable.swift */; };
+		E2147E8E208A600300D02C86 /* UITableView+CellDequeueble.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2147E8D208A600300D02C86 /* UITableView+CellDequeueble.swift */; };
+		E2147E90208A601600D02C86 /* UITableView+Registrable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2147E8F208A601600D02C86 /* UITableView+Registrable.swift */; };
+		E2147E92208A603100D02C86 /* UIView+ConstrainEdges.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2147E91208A603100D02C86 /* UIView+ConstrainEdges.swift */; };
+		E2147E94208A604400D02C86 /* UIView+NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2147E93208A604400D02C86 /* UIView+NibLoadableView.swift */; };
+		E2147E96208A605700D02C86 /* UIView+ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2147E95208A605700D02C86 /* UIView+ReusableView.swift */; };
+		E2147E98208A617200D02C86 /* Budget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2147E97208A617200D02C86 /* Budget.swift */; };
+		E2550002208A70BD0010E203 /* AlertViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2550001208A70BD0010E203 /* AlertViewPresenter.swift */; };
+		E2550004208A70CF0010E203 /* AlertViewPresenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2550003208A70CF0010E203 /* AlertViewPresenterDelegate.swift */; };
+		E2550007208A71090010E203 /* NotificationName.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2550006208A71090010E203 /* NotificationName.swift */; };
+		E2550009208A71440010E203 /* NotificationUserInfoKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2550008208A71440010E203 /* NotificationUserInfoKey.swift */; };
+		E255000B208A718A0010E203 /* PickerViewPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E255000A208A718A0010E203 /* PickerViewPresentable.swift */; };
+		E255000D208A71A50010E203 /* StoryboardIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E255000C208A71A50010E203 /* StoryboardIdentifiable.swift */; };
+		E255000F208A72250010E203 /* Date+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = E255000E208A72250010E203 /* Date+Utility.swift */; };
+		E255FFED208A6F2C0010E203 /* NetworkResultType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E255FFEC208A6F2C0010E203 /* NetworkResultType.swift */; };
+		E255FFEF208A6F540010E203 /* UIStoryboard+Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E255FFEE208A6F540010E203 /* UIStoryboard+Storyboard.swift */; };
+		E255FFF1208A6F750010E203 /* UIViewController+StoryboardIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E255FFF0208A6F750010E203 /* UIViewController+StoryboardIdentifiable.swift */; };
+		E255FFF3208A6FAC0010E203 /* ErrorHandleable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E255FFF2208A6FAC0010E203 /* ErrorHandleable.swift */; };
+		E255FFF6208A6FED0010E203 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E255FFF5208A6FED0010E203 /* NetworkError.swift */; };
+		E255FFF8208A701E0010E203 /* NetworkConnectionUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = E255FFF7208A701E0010E203 /* NetworkConnectionUtility.swift */; };
+		E255FFFA208A703E0010E203 /* SegueIdentifierType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E255FFF9208A703E0010E203 /* SegueIdentifierType.swift */; };
+		E255FFFD208A70790010E203 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = E255FFFC208A70790010E203 /* Logger.swift */; };
+		E255FFFF208A70890010E203 /* LogEventType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E255FFFE208A70890010E203 /* LogEventType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,7 +79,39 @@
 		1B757C342089F44A0000512C /* ExpensesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesTableViewCell.swift; sourceTree = "<group>"; };
 		1B757C352089F44A0000512C /* ExpensesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExpensesTableViewCell.xib; sourceTree = "<group>"; };
 		1B757C382089FE290000512C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A19FB307EC0B4A854886A791 /* Pods-BudgetApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BudgetApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-BudgetApp/Pods-BudgetApp.release.xcconfig"; sourceTree = "<group>"; };
+		A9E9A13824D68C12857F1B59 /* Pods_BudgetApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BudgetApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2147E7C208A541100D02C86 /* ViewSetupable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewSetupable.swift; sourceTree = "<group>"; };
+		E2147E7F208A5F4100D02C86 /* CellDequeueble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellDequeueble.swift; sourceTree = "<group>"; };
+		E2147E81208A5F5900D02C86 /* Registrable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registrable.swift; sourceTree = "<group>"; };
+		E2147E83208A5F7600D02C86 /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
+		E2147E85208A5F8E00D02C86 /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		E2147E87208A5FA600D02C86 /* UserInterfaceCheckable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInterfaceCheckable.swift; sourceTree = "<group>"; };
+		E2147E89208A5FCC00D02C86 /* UICollectionView+CellDequeueble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+CellDequeueble.swift"; sourceTree = "<group>"; };
+		E2147E8B208A5FE100D02C86 /* UICollectionView+Registrable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Registrable.swift"; sourceTree = "<group>"; };
+		E2147E8D208A600300D02C86 /* UITableView+CellDequeueble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+CellDequeueble.swift"; sourceTree = "<group>"; };
+		E2147E8F208A601600D02C86 /* UITableView+Registrable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Registrable.swift"; sourceTree = "<group>"; };
+		E2147E91208A603100D02C86 /* UIView+ConstrainEdges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+ConstrainEdges.swift"; sourceTree = "<group>"; };
+		E2147E93208A604400D02C86 /* UIView+NibLoadableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+NibLoadableView.swift"; sourceTree = "<group>"; };
+		E2147E95208A605700D02C86 /* UIView+ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+ReusableView.swift"; sourceTree = "<group>"; };
+		E2147E97208A617200D02C86 /* Budget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Budget.swift; sourceTree = "<group>"; };
+		E2345D54C72CA0276D0A0ACB /* Pods-BudgetApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BudgetApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BudgetApp/Pods-BudgetApp.debug.xcconfig"; sourceTree = "<group>"; };
+		E2550001208A70BD0010E203 /* AlertViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewPresenter.swift; sourceTree = "<group>"; };
+		E2550003208A70CF0010E203 /* AlertViewPresenterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewPresenterDelegate.swift; sourceTree = "<group>"; };
+		E2550006208A71090010E203 /* NotificationName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationName.swift; sourceTree = "<group>"; };
+		E2550008208A71440010E203 /* NotificationUserInfoKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationUserInfoKey.swift; sourceTree = "<group>"; };
+		E255000A208A718A0010E203 /* PickerViewPresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewPresentable.swift; sourceTree = "<group>"; };
+		E255000C208A71A50010E203 /* StoryboardIdentifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardIdentifiable.swift; sourceTree = "<group>"; };
+		E255000E208A72250010E203 /* Date+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Utility.swift"; sourceTree = "<group>"; };
+		E255FFEC208A6F2C0010E203 /* NetworkResultType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResultType.swift; sourceTree = "<group>"; };
+		E255FFEE208A6F540010E203 /* UIStoryboard+Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Storyboard.swift"; sourceTree = "<group>"; };
+		E255FFF0208A6F750010E203 /* UIViewController+StoryboardIdentifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+StoryboardIdentifiable.swift"; sourceTree = "<group>"; };
+		E255FFF2208A6FAC0010E203 /* ErrorHandleable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandleable.swift; sourceTree = "<group>"; };
+		E255FFF5208A6FED0010E203 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		E255FFF7208A701E0010E203 /* NetworkConnectionUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConnectionUtility.swift; sourceTree = "<group>"; };
+		E255FFF9208A703E0010E203 /* SegueIdentifierType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueIdentifierType.swift; sourceTree = "<group>"; };
+		E255FFFC208A70790010E203 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		E255FFFE208A70890010E203 /* LogEventType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogEventType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35FA9C8CBF5CA58E3A63FA72 /* Pods_BudgetApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +131,8 @@
 			children = (
 				1B101AB9207363ED002B8046 /* BudgetApp */,
 				1B101AB8207363ED002B8046 /* Products */,
+				DA3DFD931461C8B7D41585C7 /* Pods */,
+				85F15EDF9BDA4CFF9E0233CC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +148,10 @@
 			isa = PBXGroup;
 			children = (
 				E2147E7E208A5E7F00D02C86 /* Application */,
+				E255FFFB208A70640010E203 /* Logger */,
+				E2550005208A70FB0010E203 /* NotificationCenter */,
+				E255FFF4208A6FCD0010E203 /* Errors */,
+				E255FFEB208A6F180010E203 /* NetworkLayer */,
 				E2147E7B208A540100D02C86 /* Extensions */,
 				E2147E7A208A53F900D02C86 /* Protocols */,
 				E26F8699208A4C70005FB915 /* Controller */,
@@ -113,6 +182,23 @@
 			);
 			name = Spending;
 			path = "Dépenses";
+			sourceTree = "<group>";
+		};
+		85F15EDF9BDA4CFF9E0233CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A9E9A13824D68C12857F1B59 /* Pods_BudgetApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DA3DFD931461C8B7D41585C7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E2345D54C72CA0276D0A0ACB /* Pods-BudgetApp.debug.xcconfig */,
+				A19FB307EC0B4A854886A791 /* Pods-BudgetApp.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		E2147E77208A4F7F00D02C86 /* TableViewCells */ = {
@@ -148,6 +234,13 @@
 			isa = PBXGroup;
 			children = (
 				E2147E7C208A541100D02C86 /* ViewSetupable.swift */,
+				E255000A208A718A0010E203 /* PickerViewPresentable.swift */,
+				E255000C208A71A50010E203 /* StoryboardIdentifiable.swift */,
+				E2147E7F208A5F4100D02C86 /* CellDequeueble.swift */,
+				E2147E81208A5F5900D02C86 /* Registrable.swift */,
+				E2147E83208A5F7600D02C86 /* NibLoadable.swift */,
+				E2147E85208A5F8E00D02C86 /* ReusableView.swift */,
+				E2147E87208A5FA600D02C86 /* UserInterfaceCheckable.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -155,6 +248,16 @@
 		E2147E7B208A540100D02C86 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				E2147E89208A5FCC00D02C86 /* UICollectionView+CellDequeueble.swift */,
+				E255000E208A72250010E203 /* Date+Utility.swift */,
+				E255FFEE208A6F540010E203 /* UIStoryboard+Storyboard.swift */,
+				E255FFF0208A6F750010E203 /* UIViewController+StoryboardIdentifiable.swift */,
+				E2147E8B208A5FE100D02C86 /* UICollectionView+Registrable.swift */,
+				E2147E8D208A600300D02C86 /* UITableView+CellDequeueble.swift */,
+				E2147E8F208A601600D02C86 /* UITableView+Registrable.swift */,
+				E2147E91208A603100D02C86 /* UIView+ConstrainEdges.swift */,
+				E2147E93208A604400D02C86 /* UIView+NibLoadableView.swift */,
+				E2147E95208A605700D02C86 /* UIView+ReusableView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -167,9 +270,56 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
+		E2550000208A70AE0010E203 /* AlertView */ = {
+			isa = PBXGroup;
+			children = (
+				E2550001208A70BD0010E203 /* AlertViewPresenter.swift */,
+				E2550003208A70CF0010E203 /* AlertViewPresenterDelegate.swift */,
+			);
+			path = AlertView;
+			sourceTree = "<group>";
+		};
+		E2550005208A70FB0010E203 /* NotificationCenter */ = {
+			isa = PBXGroup;
+			children = (
+				E2550006208A71090010E203 /* NotificationName.swift */,
+				E2550008208A71440010E203 /* NotificationUserInfoKey.swift */,
+			);
+			path = NotificationCenter;
+			sourceTree = "<group>";
+		};
+		E255FFEB208A6F180010E203 /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				E255FFEC208A6F2C0010E203 /* NetworkResultType.swift */,
+				E255FFF7208A701E0010E203 /* NetworkConnectionUtility.swift */,
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		E255FFF4208A6FCD0010E203 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				E255FFF2208A6FAC0010E203 /* ErrorHandleable.swift */,
+				E255FFF5208A6FED0010E203 /* NetworkError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		E255FFFB208A70640010E203 /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				E255FFFC208A70790010E203 /* Logger.swift */,
+				E255FFFE208A70890010E203 /* LogEventType.swift */,
+			);
+			path = Logger;
+			sourceTree = "<group>";
+		};
 		E26F8697208A4C66005FB915 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E2147E97208A617200D02C86 /* Budget.swift */,
+				E255FFF9208A703E0010E203 /* SegueIdentifierType.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -177,6 +327,7 @@
 		E26F8698208A4C6C005FB915 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E2550000208A70AE0010E203 /* AlertView */,
 				E2147E77208A4F7F00D02C86 /* TableViewCells */,
 			);
 			path = View;
@@ -203,9 +354,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1B101AC9207363ED002B8046 /* Build configuration list for PBXNativeTarget "BudgetApp" */;
 			buildPhases = (
+				EF7C499AF409688773886D58 /* [CP] Check Pods Manifest.lock */,
 				1B101AB3207363ED002B8046 /* Sources */,
 				1B101AB4207363ED002B8046 /* Frameworks */,
 				1B101AB5207363ED002B8046 /* Resources */,
+				2B965E703ECA9894B5401CD8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -266,23 +419,91 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2B965E703ECA9894B5401CD8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BudgetApp/Pods-BudgetApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BudgetApp/Pods-BudgetApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF7C499AF409688773886D58 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BudgetApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1B101AB3207363ED002B8046 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				1B757C2D2089D6930000512C /* BudgetTableViewCell.swift in Sources */,
+				E2147E86208A5F8E00D02C86 /* ReusableView.swift in Sources */,
 				E2147E7D208A541100D02C86 /* ViewSetupable.swift in Sources */,
 				1B6DBC0E207520530000A995 /* ThresholdViewController.swift in Sources */,
+				E2147E90208A601600D02C86 /* UITableView+Registrable.swift in Sources */,
+				E2550009208A71440010E203 /* NotificationUserInfoKey.swift in Sources */,
+				E255FFF6208A6FED0010E203 /* NetworkError.swift in Sources */,
+				E2147E92208A603100D02C86 /* UIView+ConstrainEdges.swift in Sources */,
+				E2550004208A70CF0010E203 /* AlertViewPresenterDelegate.swift in Sources */,
+				E255FFF8208A701E0010E203 /* NetworkConnectionUtility.swift in Sources */,
+				E255FFFA208A703E0010E203 /* SegueIdentifierType.swift in Sources */,
 				1B757C282089CE250000512C /* LogInViewController.swift in Sources */,
+				E255000F208A72250010E203 /* Date+Utility.swift in Sources */,
+				E255000B208A718A0010E203 /* PickerViewPresentable.swift in Sources */,
+				E2550002208A70BD0010E203 /* AlertViewPresenter.swift in Sources */,
 				1B101ABB207363ED002B8046 /* AppDelegate.swift in Sources */,
 				1B101AE02073711F002B8046 /* NewExpenseViewController.swift in Sources */,
+				E255FFFF208A70890010E203 /* LogEventType.swift in Sources */,
 				1B6DBC0A20751FCD0000A995 /* BudgetViewController.swift in Sources */,
 				1B6DBC0820751F920000A995 /* ExpensesViewController.swift in Sources */,
+				E2147E94208A604400D02C86 /* UIView+NibLoadableView.swift in Sources */,
+				E2147E8C208A5FE100D02C86 /* UICollectionView+Registrable.swift in Sources */,
+				E2550007208A71090010E203 /* NotificationName.swift in Sources */,
 				1B757C392089FE290000512C /* HomeViewController.swift in Sources */,
+				E2147E8A208A5FCC00D02C86 /* UICollectionView+CellDequeueble.swift in Sources */,
+				E2147E84208A5F7600D02C86 /* NibLoadable.swift in Sources */,
+				E255FFF3208A6FAC0010E203 /* ErrorHandleable.swift in Sources */,
+				E2147E88208A5FA600D02C86 /* UserInterfaceCheckable.swift in Sources */,
 				1B757C362089F44A0000512C /* ExpensesTableViewCell.swift in Sources */,
+				E2147E80208A5F4100D02C86 /* CellDequeueble.swift in Sources */,
+				E255000D208A71A50010E203 /* StoryboardIdentifiable.swift in Sources */,
+				E255FFEF208A6F540010E203 /* UIStoryboard+Storyboard.swift in Sources */,
 				1B101ADC20736AA3002B8046 /* SWRevealViewController.m in Sources */,
+				E255FFFD208A70790010E203 /* Logger.swift in Sources */,
+				E2147E98208A617200D02C86 /* Budget.swift in Sources */,
 				1B6DBC0C207520080000A995 /* ConfigurationTableViewController.swift in Sources */,
+				E255FFF1208A6F750010E203 /* UIViewController+StoryboardIdentifiable.swift in Sources */,
+				E2147E96208A605700D02C86 /* UIView+ReusableView.swift in Sources */,
+				E2147E82208A5F5900D02C86 /* Registrable.swift in Sources */,
+				E255FFED208A6F2C0010E203 /* NetworkResultType.swift in Sources */,
+				E2147E8E208A600300D02C86 /* UITableView+CellDequeueble.swift in Sources */,
 				1B757C2A2089CEDD0000512C /* InscriptionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,6 +643,7 @@
 		};
 		1B101ACA207363ED002B8046 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2345D54C72CA0276D0A0ACB /* Pods-BudgetApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -440,6 +662,7 @@
 		};
 		1B101ACB207363ED002B8046 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A19FB307EC0B4A854886A791 /* Pods-BudgetApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
