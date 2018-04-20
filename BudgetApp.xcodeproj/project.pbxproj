@@ -465,7 +465,7 @@
 				DEVELOPMENT_TEAM = L9L72R78Y3;
 				INFOPLIST_FILE = BudgetApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.gestionbudget.BudgetApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.milek.pawel.BudgetApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "BudgetApp/ObjC/BudgetApp-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -483,7 +483,7 @@
 				DEVELOPMENT_TEAM = L9L72R78Y3;
 				INFOPLIST_FILE = BudgetApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.gestionbudget.BudgetApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.milek.pawel.BudgetApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "BudgetApp/ObjC/BudgetApp-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
