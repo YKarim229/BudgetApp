@@ -10,7 +10,7 @@ import Foundation
 
 extension Date {
   
-  static private var dateFormatter: DateFormatter {
+  static var defaultFormatter: DateFormatter {
     let formatter = DateFormatter()
     formatter.dateFormat = "yyyy-MM-dd hh:mm:ss"
     formatter.locale = Locale.current
@@ -19,19 +19,25 @@ extension Date {
   }
   
   
-  static func dateToString(_ date: Date) -> String? {
-    return dateFormatter.string(from: date)
+  static func dateToString(_ date: Date, with formatter: DateFormatter = defaultFormatter) -> String? {
+    return formatter.string(from: date)
   }
   
   
-  static func shortTime(from dateString: String) -> String {
-    let isoFormatter = Date.dateFormatter
-    let date = isoFormatter.date(from: dateString)!
+  static func shortTime(from dateString: String, with formatter: DateFormatter = defaultFormatter) -> String? {
+    guard let date = formatter.date(from: dateString) else { return nil }
     
+    let shortFormatter = DateFormatter()
+    shortFormatter.dateStyle = .none
+    shortFormatter.timeStyle = .short
+    return shortFormatter.string(from: date)
+  }
+  
+  var stringDate: String {
     let formatter = DateFormatter()
-    formatter.dateStyle = .none
-    formatter.timeStyle = .short
-    return formatter.string(from: date)
+    formatter.dateFormat = "yyyy-MM-dd"
+    formatter.locale = Locale.current
+    return Date.dateToString(self, with: formatter) ?? "0000-00-00"
   }
   
 }

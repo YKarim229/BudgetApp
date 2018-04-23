@@ -15,13 +15,13 @@ class BudgetViewController: UIViewController {
   
   private lazy var budgetItems: [Budget] = {
     var budgets = [Budget]()
-    budgets.append(Budget(title: "Budget 1", period: ("19/03/2018", "29/03/2018"), amount: 87.00))
-    budgets.append(Budget(title: "Budget du mois d'Avril", period: ("01/04/2018", "30/04/2018"), amount: 120.00))
-    budgets.append(Budget(title: "Budget du mois de Mai", period: ("01/05/2018", "31/05/2018"), amount: 112.50))
-    budgets.append(Budget(title: "Budget du mois de Juin", period: ("01/06/2018", "30/06/2018"), amount: 144.70))
-    budgets.append(Budget(title: "Budget du mois de Juillet", period: ("01/07/2018", "29/03/2018"), amount: 120.00))
-    budgets.append(Budget(title: "Budget du mois de Septembre", period: ("19/03/2018", "29/03/2018"), amount: 167.00))
-    budgets.append(Budget(title: "Budget 2", period: ("19/03/2018", "29/03/2018"), amount: 92.00))
+    budgets.append(Budget(identifier: 1, title: "Budget 1", startDate: Date(), endDate: Date() + 1))
+    budgets.append(Budget(identifier: 2, title: "Budget du mois d'Avril", startDate: Date(), endDate: Date() + 2))
+    budgets.append(Budget(identifier: 3, title: "Budget du mois de Mai", startDate: Date(), endDate: Date() + 3))
+    budgets.append(Budget(identifier: 4, title: "Budget du mois de Juin", startDate: Date(), endDate: Date() + 4))
+    budgets.append(Budget(identifier: 5, title: "Budget du mois de Juillet", startDate: Date(), endDate: Date() + 5))
+    budgets.append(Budget(identifier: 6, title: "Budget du mois de Septembre", startDate: Date(), endDate: Date() + 6))
+    budgets.append(Budget(identifier: 7, title: "Budget 2", startDate: Date(), endDate: Date() + 7))
     
     return budgets
   }()

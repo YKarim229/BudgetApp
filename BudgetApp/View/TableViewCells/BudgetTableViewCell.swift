@@ -17,7 +17,7 @@ class BudgetTableViewCell: UITableViewCell {
     didSet {
       titleLabel.text = item?.title
       dateLabel.text = item?.periodDescription
-      amountLabel.text = item?.amountWithCurrency
+      amountLabel.text = "" //item?.amountWithCurrency
     }
   }
   
