@@ -13,6 +13,8 @@ class ThresholdViewController: UIViewController {
   @IBOutlet var segmentedControl: UISegmentedControl!
   @IBOutlet var seuilsTableView: UITableView!
   
+  private var threshold: Threshold?
+  
   private var items = [String]()
   private var selectedSegment: Int = 0 {
     didSet {
@@ -78,6 +80,7 @@ extension ThresholdViewController: UITableViewDelegate {
     print(items[row])
   }
 }
+
 
 // MARK: - Actions
 private extension ThresholdViewController {

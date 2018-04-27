@@ -9,14 +9,34 @@
 import UIKit
 
 class NewExpenseViewController: UIViewController  {
+  @IBOutlet weak var categoryPickerView: UIPickerView!
+  @IBOutlet weak var currencyPickerView: UIPickerView!
   @IBOutlet weak var dateField: UITextField!
   
-  let picker = UIDatePicker()
-  private let dataSource =  ["Alimentation", "Transport", "Communication", "Divertissement", "Imprévus"] // dataSource = Catégories !
-  private let currency =    ["XOF", "GHS", "NGN", "EUR", "USD"] //currency = Devises !
+  lazy private var picker: UIDatePicker = {
+    let datePicker = UIDatePicker()
+    dateField.inputView = datePicker
+    datePicker.datePickerMode = .date
+    return datePicker
+  }()
   
-  @IBOutlet weak var pickerView: UIPickerView! // Catégories
-  @IBOutlet weak var pickerView2: UIPickerView! // Currency
+  private var categories: [Category] = {
+    let food = Category(title: "Alimentation")
+    let transport = Category(title: "Transport")
+    let communication = Category(title: "Communication")
+    let entertainment = Category(title: "Divertissement")
+    let unexpected = Category(title: "Imprévus")
+    return [food, transport, communication, entertainment, unexpected]
+  }()
+  
+  private var currencies: [Currency] = {
+    let currencyXOF = Currency(identifier: 1, symbol: "XOF")
+    let currencyGHS = Currency(identifier: 2, symbol: "GHS")
+    let currencyNGN = Currency(identifier: 3, symbol: "NGN")
+    let currencyEUR = Currency(identifier: 4, symbol: "EUR")
+    let currencyUSD = Currency(identifier: 5, symbol: "USD")
+    return [currencyXOF, currencyGHS, currencyNGN, currencyEUR, currencyUSD]
+  }()
   
   
   override func viewDidLoad() {
@@ -30,32 +50,39 @@ class NewExpenseViewController: UIViewController  {
 extension NewExpenseViewController: ViewSetupable {
   
   func setup() {
-    pickerView.dataSource = self
-    pickerView.delegate = self
-    pickerView2.dataSource = self
-    pickerView2.delegate = self
-    
-    createDatePicker()
+    setToolBar()
+    assignPickerViewdelegates()
   }
   
 }
 
 
-// MARK: - Create DatePicker
+
+// MARK: - Set tool bar
 private extension NewExpenseViewController {
   
-  func createDatePicker() {
+  func setToolBar() {
     let toolBar = UIToolbar()
     toolBar.sizeToFit()
     
     let done = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: #selector(donePressed))
     toolBar.setItems([done], animated: false)
-    
+  
     dateField.inputAccessoryView = toolBar
-    dateField.inputView = picker
-    picker.datePickerMode = .date
   }
+}
 
+
+// MARK: - Assign picker view delegates
+private extension NewExpenseViewController {
+  
+  func assignPickerViewdelegates() {
+    categoryPickerView.dataSource = self
+    categoryPickerView.delegate = self
+    currencyPickerView.dataSource = self
+    currencyPickerView.delegate = self
+  }
+  
 }
 
 
@@ -83,7 +110,7 @@ extension NewExpenseViewController: UIPickerViewDataSource  {
   }
   
   func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-    return (pickerView == self.pickerView ? dataSource.count : currency.count)
+    return (pickerView == self.categoryPickerView ? categories.count : currencies.count)
   }
   
 }
@@ -93,7 +120,7 @@ extension NewExpenseViewController: UIPickerViewDataSource  {
 extension NewExpenseViewController: UIPickerViewDelegate  {
   
   func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-    return (pickerView == self.pickerView ? dataSource[row] : currency[row])
+    return (pickerView == self.categoryPickerView ? categories[row].title : currencies[row].symbol)
   }
   
 }

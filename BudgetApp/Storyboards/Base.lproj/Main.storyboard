@@ -127,7 +127,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0uZ-Uh-HuC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2804" y="173"/>
+            <point key="canvasLocation" x="-2812" y="202"/>
         </scene>
         <!--Inscription-->
         <scene sceneID="QWa-pg-Xuz">
@@ -237,7 +237,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fWk-ip-zAT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1721" y="174"/>
+            <point key="canvasLocation" x="-1822" y="718"/>
         </scene>
         <!--Reveal Menu-->
         <scene sceneID="Idr-z0-sDo">
@@ -517,7 +517,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pzP-zw-4VW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-556" y="958"/>
+            <point key="canvasLocation" x="22" y="1166"/>
         </scene>
         <!--Nouvelle Dépense-->
         <scene sceneID="PqT-Lj-7er">
@@ -614,14 +614,14 @@
                         <viewLayoutGuide key="safeArea" id="2Si-GB-scd"/>
                     </view>
                     <connections>
+                        <outlet property="categoryPickerView" destination="aKl-NS-udH" id="WRb-1w-XN4"/>
+                        <outlet property="currencyPickerView" destination="mRa-GG-hY4" id="LNe-bS-13G"/>
                         <outlet property="dateField" destination="6fu-wF-4Ib" id="hkS-f9-lN9"/>
-                        <outlet property="pickerView" destination="aKl-NS-udH" id="WRb-1w-XN4"/>
-                        <outlet property="pickerView2" destination="mRa-GG-hY4" id="LNe-bS-13G"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LGk-D0-VJF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1045.5999999999999" y="957.57121439280365"/>
+            <point key="canvasLocation" x="1623" y="1166"/>
         </scene>
         <!--Budgets-->
         <scene sceneID="HcE-Jp-FuR">
@@ -1196,7 +1196,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="elC-dn-DUU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="300" y="957.57121439280365"/>
+            <point key="canvasLocation" x="878" y="1166"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="380-Dk-gxd">
@@ -1637,14 +1637,14 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Seuils de dépense" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="scU-hV-n2k">
-                                                    <rect key="frame" x="16" y="4" width="143" height="20.5"/>
+                                                    <rect key="frame" x="15" y="4" width="143" height="20.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Par catégorie" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vho-xC-uMC">
-                                                    <rect key="frame" x="16" y="24.5" width="89.5" height="16"/>
+                                                    <rect key="frame" x="15" y="24.5" width="89.5" height="16"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="13"/>
                                                     <color key="textColor" red="0.0" green="0.58628696199999997" blue="0.53447610140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1713,7 +1713,8 @@
         <image name="logo.png" width="339" height="338"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="yOQ-x7-Uzy"/>
+        <segue reference="0WZ-eI-2vM"/>
+        <segue reference="iCi-bh-cdU"/>
         <segue reference="CAe-3f-IPG"/>
     </inferredMetricsTieBreakers>
 </document>

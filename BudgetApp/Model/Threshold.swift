@@ -9,7 +9,10 @@
 import Foundation
 
 struct Threshold { // Seuil
-  
+  var threshold: Double
+  var categories: [Category]
+  var periods: [Period]
+  var currency: Currency
 }
 
 

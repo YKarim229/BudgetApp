@@ -9,7 +9,7 @@
 import Foundation
 
 struct Category { // Categorie
-  
+  var title: String
 }
 
 
