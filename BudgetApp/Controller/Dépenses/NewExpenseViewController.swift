@@ -12,6 +12,7 @@ class NewExpenseViewController: UIViewController  {
   @IBOutlet weak var categoryPickerView: UIPickerView!
   @IBOutlet weak var currencyPickerView: UIPickerView!
   @IBOutlet weak var dateField: UITextField!
+  @IBOutlet weak var registerButton: UIButton!
   
   lazy private var picker: UIDatePicker = {
     let datePicker = UIDatePicker()
@@ -21,11 +22,11 @@ class NewExpenseViewController: UIViewController  {
   }()
   
   private var categories: [Category] = {
-    let food = Category(title: "Alimentation")
-    let transport = Category(title: "Transport")
-    let communication = Category(title: "Communication")
-    let entertainment = Category(title: "Divertissement")
-    let unexpected = Category(title: "Imprévus")
+    let food = Category(identifier: 1, title: "Alimentation")
+    let transport = Category(identifier: 2, title: "Transport")
+    let communication = Category(identifier: 3, title: "Communication")
+    let entertainment = Category(identifier: 4, title: "Divertissement")
+    let unexpected = Category(identifier: 5, title: "Imprévus")
     return [food, transport, communication, entertainment, unexpected]
   }()
   

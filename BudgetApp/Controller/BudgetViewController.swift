@@ -41,12 +41,11 @@ extension BudgetViewController: ViewSetupable {
     registerTableViewCell()
     assignTableViewDelegate()
     
-    
-    // MARK: What is that??
-    if self.revealViewController() != nil {
-      openMenuBarButton.target = self.revealViewController()
-      openMenuBarButton.action = Selector("revealToggle:")
-      self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+    if let parentSWRevealViewController = self.revealViewController() {
+      openMenuBarButton.target = parentSWRevealViewController
+      openMenuBarButton.action = #selector(SWRevealViewController.revealToggle(_:))
+      
+      self.view.addGestureRecognizer(parentSWRevealViewController.panGestureRecognizer())
       // Do any additional setup after loading the view.
     }
   }

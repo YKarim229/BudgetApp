@@ -9,7 +9,7 @@
 import UIKit
 
 class ExpensesViewController: UIViewController {
-  @IBOutlet weak var Open: UIBarButtonItem!
+  @IBOutlet weak var openMenuBarButton: UIBarButtonItem!
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -21,11 +21,11 @@ class ExpensesViewController: UIViewController {
 extension ExpensesViewController: ViewSetupable {
   
   func setup() {
-    if self.revealViewController() != nil {
-      Open.target = self.revealViewController()
-      Open.action = Selector("revealToggle:")
+    if let parentSWRevealViewController = self.revealViewController() {
+      openMenuBarButton.target = parentSWRevealViewController
+      openMenuBarButton.action = #selector(SWRevealViewController.revealToggle(_:))
       
-      self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+      self.view.addGestureRecognizer(parentSWRevealViewController.panGestureRecognizer())
       // Do any additional setup after loading the view.
     }
   }

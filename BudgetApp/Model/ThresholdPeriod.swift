@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct ThresholdPeriod { // Seuil Periode
+final class ThresholdPeriod { // Seuil Periode
   
 }
 
@@ -21,3 +21,11 @@ struct ThresholdPeriod { // Seuil Periode
 //  `Date_UP` datetime NOT NULL,
 //  `Statut` varchar(100) NOT NULL,
 //  `Id_User_FK` int(11) NOT NULL
+
+
+//'id_seuil_periode' =>  utf8_encode($row['Id_SeuilPeriode_PK']),
+//'id_periode' =>  utf8_encode($row['Id_Periode_FK']),
+//'libelle_periode' =>  utf8_encode($row['LibPeriode']),
+//'seuil_periode' =>  utf8_encode($row['SeuiPeriode']),
+//'id_devise' =>  utf8_encode($row['Id_Devise_PK']),
+//'libelle_devise' =>  utf8_encode($row['LibDevise'])

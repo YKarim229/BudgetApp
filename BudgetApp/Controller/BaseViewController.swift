@@ -1,16 +1,15 @@
 //
-//  HomeViewController.swift
+//  BaseViewController.swift
 //  BudgetApp
 //
-//  Created by Karim YAOITCHA on 4/20/18.
+//  Created by Pawel Milek on 4/27/18.
 //  Copyright © 2018 PHP AFRIQUE. All rights reserved.
 //
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class BaseViewController: UIViewController {
   @IBOutlet weak var openMenuBarButton: UIBarButtonItem!
-  
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -20,7 +19,7 @@ class HomeViewController: UIViewController {
 
 
 // MARK: - ViewSetupable protocol
-extension HomeViewController: ViewSetupable {
+extension BaseViewController: ViewSetupable {
   
   func setup() {
     

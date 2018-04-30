@@ -8,8 +8,14 @@
 
 import Foundation
 
-struct Category { // Categorie
+final class Category { // Categorie
+  var identifier: Int
   var title: String
+  
+  init(identifier: Int, title: String) {
+    self.identifier = identifier
+    self.title = title
+  }
 }
 
 

@@ -58,12 +58,13 @@
 		E2B01DAC208E39820095C0F5 /* BudgetDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B01DAB208E39820095C0F5 /* BudgetDetails.swift */; };
 		E2B01DAE208E3A800095C0F5 /* BudgetStatusType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B01DAD208E3A800095C0F5 /* BudgetStatusType.swift */; };
 		E2B01DB0208E3C4B0095C0F5 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B01DAF208E3C4B0095C0F5 /* Category.swift */; };
-		E2B01DB2208E3CB40095C0F5 /* Spent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B01DB1208E3CB40095C0F5 /* Spent.swift */; };
+		E2B01DB2208E3CB40095C0F5 /* Expenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B01DB1208E3CB40095C0F5 /* Expenses.swift */; };
 		E2B01DB4208E3DE40095C0F5 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B01DB3208E3DE40095C0F5 /* Currency.swift */; };
 		E2B01DB6208E4EB20095C0F5 /* Period.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B01DB5208E4EB20095C0F5 /* Period.swift */; };
 		E2B01DB8208E4F870095C0F5 /* Threshold.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B01DB7208E4F870095C0F5 /* Threshold.swift */; };
 		E2B01DBA208E4FD50095C0F5 /* ThresholdPeriod.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B01DB9208E4FD50095C0F5 /* ThresholdPeriod.swift */; };
 		E2B01DBC208E4FFE0095C0F5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B01DBB208E4FFE0095C0F5 /* User.swift */; };
+		E2E8379D209384A30026F1D3 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E8379C209384A30026F1D3 /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -124,12 +125,13 @@
 		E2B01DAB208E39820095C0F5 /* BudgetDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetDetails.swift; sourceTree = "<group>"; };
 		E2B01DAD208E3A800095C0F5 /* BudgetStatusType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetStatusType.swift; sourceTree = "<group>"; };
 		E2B01DAF208E3C4B0095C0F5 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
-		E2B01DB1208E3CB40095C0F5 /* Spent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spent.swift; sourceTree = "<group>"; };
+		E2B01DB1208E3CB40095C0F5 /* Expenses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expenses.swift; sourceTree = "<group>"; };
 		E2B01DB3208E3DE40095C0F5 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		E2B01DB5208E4EB20095C0F5 /* Period.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Period.swift; sourceTree = "<group>"; };
 		E2B01DB7208E4F870095C0F5 /* Threshold.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Threshold.swift; sourceTree = "<group>"; };
 		E2B01DB9208E4FD50095C0F5 /* ThresholdPeriod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThresholdPeriod.swift; sourceTree = "<group>"; };
 		E2B01DBB208E4FFE0095C0F5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E2E8379C209384A30026F1D3 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -340,7 +342,7 @@
 				E2B01DAF208E3C4B0095C0F5 /* Category.swift */,
 				E2B01DB3208E3DE40095C0F5 /* Currency.swift */,
 				E2B01DB5208E4EB20095C0F5 /* Period.swift */,
-				E2B01DB1208E3CB40095C0F5 /* Spent.swift */,
+				E2B01DB1208E3CB40095C0F5 /* Expenses.swift */,
 				E2B01DB7208E4F870095C0F5 /* Threshold.swift */,
 				E2B01DB9208E4FD50095C0F5 /* ThresholdPeriod.swift */,
 				E2B01DBB208E4FFE0095C0F5 /* User.swift */,
@@ -367,6 +369,7 @@
 				1B6DBC0B207520080000A995 /* ConfigurationTableViewController.swift */,
 				1B757C292089CEDD0000512C /* InscriptionViewController.swift */,
 				1B757C272089CE250000512C /* LogInViewController.swift */,
+				E2E8379C209384A30026F1D3 /* BaseViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -511,9 +514,10 @@
 				E2B01DB6208E4EB20095C0F5 /* Period.swift in Sources */,
 				E255FFF8208A701E0010E203 /* NetworkConnectionUtility.swift in Sources */,
 				E2B01DBA208E4FD50095C0F5 /* ThresholdPeriod.swift in Sources */,
+				E2E8379D209384A30026F1D3 /* BaseViewController.swift in Sources */,
 				E2B01DB8208E4F870095C0F5 /* Threshold.swift in Sources */,
 				E255FFFA208A703E0010E203 /* SegueIdentifierType.swift in Sources */,
-				E2B01DB2208E3CB40095C0F5 /* Spent.swift in Sources */,
+				E2B01DB2208E3CB40095C0F5 /* Expenses.swift in Sources */,
 				E2B01DAC208E39820095C0F5 /* BudgetDetails.swift in Sources */,
 				1B757C282089CE250000512C /* LogInViewController.swift in Sources */,
 				E255000F208A72250010E203 /* Date+Utility.swift in Sources */,

@@ -8,12 +8,20 @@
 
 import Foundation
 
-struct Budget {
+final class Budget {
   var identifier: Int
   var title: String
   var startDate: Date
   var endDate: Date
-//  var budgetDetails: BudgetDetails
+  var budgetDetails: [BudgetDetails]?
+  
+  init(identifier: Int, title: String, startDate: Date, endDate: Date, budgetDetails: [BudgetDetails]? = nil) {
+    self.identifier = identifier
+    self.title = title
+    self.startDate = startDate
+    self.endDate = endDate
+    self.budgetDetails = budgetDetails
+  }
 }
 
 
@@ -50,26 +58,32 @@ extension Budget: Decodable {
   }
   
   
-  init(from decoder: Decoder) throws {
+  convenience init(from decoder: Decoder) throws {
     let container = try decoder.container(keyedBy: CodingKeys.self)
     
-    self.identifier = try container.decode(Int.self, forKey: .identifier)
-    self.title = try container.decode(String.self, forKey: .title)
+    let identifier = try container.decode(Int.self, forKey: .identifier)
+    let title = try container.decode(String.self, forKey: .title)
     
     let startDateString: String = try container.decode(String.self, forKey: .startDate)
     let endDateString: String = try container.decode(String.self, forKey: .endDate)
     
-    if let startDate = Date.defaultFormatter.date(from: startDateString) {
-      self.startDate = startDate
+    var startDate = Date()
+    var endDate = Date()
+    
+    if let date = Date.defaultFormatter.date(from: startDateString) {
+      startDate = date
     } else {
       throw DecodingError.dataCorruptedError(forKey: .startDate, in: container, debugDescription: "Date string does not match format expected by formatter.")
     }
     
-    if let endDate = Date.defaultFormatter.date(from: endDateString) {
-      self.endDate = endDate
+    if let date = Date.defaultFormatter.date(from: endDateString) {
+      endDate = date
     } else {
       throw DecodingError.dataCorruptedError(forKey: .endDate, in: container, debugDescription: "Date string does not match format expected by formatter.")
     }
+    
+    
+    self.init(identifier: identifier, title: title, startDate: startDate, endDate: endDate)
   }
   
 }

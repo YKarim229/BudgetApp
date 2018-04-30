@@ -8,12 +8,18 @@
 
 import Foundation
 
-struct BudgetDetails {
+final class BudgetDetails {
   var identifier: Int
-  var budget: Budget
   var category: Category
   var amount: Double
   var currency: Currency
+  
+  init(identifier: Int, category: Category, amount: Double, currency: Currency) {
+    self.identifier = identifier
+    self.category = category
+    self.amount = amount
+    self.currency = currency
+  }
 }
 
 
@@ -36,10 +42,49 @@ extension BudgetDetails {
 //`Id_Devise_FK` int(11) NOT NULL
 
 
-//'id_detail_budget' =>  utf8_encode($row['id']),
-//'id_budget' =>  utf8_encode($row['Id_Budget_FK']),
-//'id_categorie' =>  utf8_encode($row['Id_Categorie_FK']),
-//'libelle_categorie' =>  utf8_encode($row['LibCategorie']),
-//'montant' =>  utf8_encode($row['Montant']),
-//'id_devise' =>  utf8_encode($row['Id_Devise_FK']),
-//'libelle_devise' =>  utf8_encode($row['LibDevise'])
+// MARK: - Decodable protocol
+extension BudgetDetails: Decodable {
+  
+  enum CodingKeys: String, CodingKey {
+    case identifier = "id_detail_budget"
+    case budgetId = "id_budget"
+    case categorieId = "id_categorie"
+    case categorieTitle = "libelle_categorie"
+    case amount = "montant"
+    case currencyId = "id_devise"
+    case currencySymbol = "libelle_devise"
+  }
+  
+  
+  convenience init(from decoder: Decoder) throws {
+    let container = try decoder.container(keyedBy: CodingKeys.self)
+    
+    let identifier = try container.decode(Int.self, forKey: .identifier)
+    
+    let categoryId = try container.decode(Int.self, forKey: .categorieId)
+    let categoryTitle = try container.decode(String.self, forKey: .categorieTitle)
+    let category = Category(identifier: categoryId, title: categoryTitle)
+    let amount = try container.decode(Double.self, forKey: .amount)
+    
+    let currencyId = try container.decode(Int.self, forKey: .currencyId)
+    let currencySymbol = try container.decode(String.self, forKey: .currencySymbol)
+    let currency = Currency(identifier: currencyId, symbol: currencySymbol)
+    
+    self.init(identifier: identifier, category: category, amount: amount, currency: currency)
+  }
+  
+}
+
+
+// MARK: Encodable protocol
+extension BudgetDetails: Encodable {
+  
+  func encode(to encoder: Encoder) throws {
+    var container = encoder.container(keyedBy: CodingKeys.self)
+    try container.encode(identifier, forKey: .identifier)
+//    try container.encode(title, forKey: .title)
+//    try container.encode(startDate, forKey: .startDate)
+//    try container.encode(endDate, forKey: .endDate)
+  }
+  
+}

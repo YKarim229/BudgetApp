@@ -9,7 +9,7 @@
 import UIKit
 
 class ThresholdViewController: UIViewController {
-  @IBOutlet var openBarButtonItem: UIBarButtonItem!
+  @IBOutlet var openMenuBarButton: UIBarButtonItem!
   @IBOutlet var segmentedControl: UISegmentedControl!
   @IBOutlet var seuilsTableView: UITableView!
   
@@ -29,11 +29,11 @@ class ThresholdViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    if self.revealViewController() != nil {
-      openBarButtonItem.target = self.revealViewController()
-      openBarButtonItem.action = Selector("revealToggle:")
+    if let parentSWRevealViewController = self.revealViewController() {
+      openMenuBarButton.target = parentSWRevealViewController
+      openMenuBarButton.action = #selector(SWRevealViewController.revealToggle(_:))
       
-      self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+      self.view.addGestureRecognizer(parentSWRevealViewController.panGestureRecognizer())
       // Do any additional setup after loading the view.
     }
     

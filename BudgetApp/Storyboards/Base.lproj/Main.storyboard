@@ -617,6 +617,7 @@
                         <outlet property="categoryPickerView" destination="aKl-NS-udH" id="WRb-1w-XN4"/>
                         <outlet property="currencyPickerView" destination="mRa-GG-hY4" id="LNe-bS-13G"/>
                         <outlet property="dateField" destination="6fu-wF-4Ib" id="hkS-f9-lN9"/>
+                        <outlet property="registerButton" destination="pvv-w1-zBo" id="lKe-yu-Cr5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LGk-D0-VJF" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -759,10 +760,10 @@
                     </navigationItem>
                     <connections>
                         <outlet property="ExpensesTableViewController" destination="Mrk-BN-azg" id="Pg8-bu-hHA"/>
-                        <outlet property="Open" destination="AMQ-ng-ge0" id="tQ1-ce-tCE"/>
                         <outlet property="dateDébut" destination="XxJ-VN-OLP" id="aXa-qS-bbx"/>
                         <outlet property="dateFin" destination="ggt-ES-GYL" id="QQN-TM-TxW"/>
                         <outlet property="expensesTableView" destination="Mrk-BN-azg" id="bJD-s5-sgI"/>
+                        <outlet property="openMenuBarButton" destination="AMQ-ng-ge0" id="tQ1-ce-tCE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="80L-Be-0e9" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -843,7 +844,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="openBarButtonItem" destination="QGM-t7-QH3" id="mSb-F1-Ytu"/>
+                        <outlet property="openMenuBarButton" destination="QGM-t7-QH3" id="mSb-F1-Ytu"/>
                         <outlet property="segmentedControl" destination="OtA-Kc-SEe" id="dfL-bf-cB8"/>
                         <outlet property="seuilsTableView" destination="Rac-6Z-p3J" id="8rV-Oi-J7U"/>
                     </connections>
@@ -1183,15 +1184,15 @@
                         <barButtonItem key="rightBarButtonItem" image="icons8-add-32.png" id="KcL-WZ-BQW">
                             <color key="tintColor" red="0.0" green="0.58628696199999997" blue="0.53447610140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
-                                <segue destination="yaw-Ch-vbV" kind="show" id="RHL-6G-mV6"/>
+                                <segue destination="yaw-Ch-vbV" kind="show" identifier="NewExpenseSegue" id="RHL-6G-mV6"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="Open" destination="aLV-IJ-Zcc" id="1Dr-bl-h03"/>
                         <outlet property="date_1" destination="mWQ-Mb-6di" id="qe9-9y-LJC"/>
                         <outlet property="date_2" destination="89x-sA-bDs" id="X44-8y-63L"/>
                         <outlet property="op" destination="aLV-IJ-Zcc" id="f0V-EV-4po"/>
+                        <outlet property="openMenuBarButton" destination="aLV-IJ-Zcc" id="1Dr-bl-h03"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="elC-dn-DUU" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1713,7 +1714,6 @@
         <image name="logo.png" width="339" height="338"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="0WZ-eI-2vM"/>
         <segue reference="iCi-bh-cdU"/>
         <segue reference="CAe-3f-IPG"/>
     </inferredMetricsTieBreakers>
