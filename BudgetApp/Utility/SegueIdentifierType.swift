@@ -9,7 +9,18 @@
 import Foundation
 
 enum SegueIdentifierType: String {
-  case inscription = "InscriptionSegue"
   case revealMenu = "RevealMenuSegue"
   case newExpense = "NewExpenseSegue"
+  case expensesDashboard = "ExpensesDashboardSegue"
+  case expenses = "ExpensesSegue"
+  case budget = "BudgetSegue"
+  case thresholds = "ThresholdsSegue"
+  case configuration = "ConfigurationSegue"
+  case signOut = "SignOutSegue"
+  case logIn = "LogInSegue"
+  case register = "RegisterSegue"
+  case createAccount = "createAccountSegue"
+  
+  case notifications = "NotificationsSegue"
+  case myAccount = "MyAccountsSegue"
 }

@@ -9,32 +9,38 @@
 import UIKit
 
 class ConfigurationTableViewController: UITableViewController {
-  @IBOutlet weak var Open: UIBarButtonItem!
+  @IBOutlet weak var openMenuBarButton: UIBarButtonItem!
+  
   
   override func viewDidLoad() {
     super.viewDidLoad()
     setup()
-    
-    
   }
+  
+  @IBAction func openMenuBarButtonPressed(_ sender: UIBarButtonItem) {
+    // TODO: Implement logic
+    print("openMenuBarButtonPressed")
+    self.dismiss(animated: true)
+  }
+  
 }
 
 // MARK: - ViewSetupable protocol
 extension ConfigurationTableViewController: ViewSetupable {
   
   func setup() {
-    if self.revealViewController() != nil {
-      Open.target = self.revealViewController()
-      Open.action = Selector("revealToggle:")
-      
-      self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
-      
-      // Uncomment the following line to preserve selection between presentations
-      // self.clearsSelectionOnViewWillAppear = false
-      
-      // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-      // self.navigationItem.rightBarButtonItem = self.editButtonItem
-    }
+//    if self.revealViewController() != nil {
+//      Open.target = self.revealViewController()
+//      Open.action = Selector("revealToggle:")
+//
+//      self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+//
+//      // Uncomment the following line to preserve selection between presentations
+//      // self.clearsSelectionOnViewWillAppear = false
+//
+//      // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+//      // self.navigationItem.rightBarButtonItem = self.editButtonItem
+//    }
   }
   
 }

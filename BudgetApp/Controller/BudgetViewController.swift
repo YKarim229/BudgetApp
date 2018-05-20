@@ -102,6 +102,7 @@ extension BudgetViewController {
   @IBAction func openMenuBarButtonPressed(_ sender: UIBarButtonItem) {
     // TODO: Implement logic
     print("openMenuBarButtonPressed")
+    self.dismiss(animated: true)
   }
   
   @IBAction func addBudgetBarButtonPressed(_ sender: UIBarButtonItem) {

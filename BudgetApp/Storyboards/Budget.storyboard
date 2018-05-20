@@ -1,7 +1,95 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JHV-iH-s6g">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--Budgets-->
+        <scene sceneID="SLk-nN-8pE">
+            <objects>
+                <viewController title="Budgets" id="QNX-3L-Lhe" customClass="BudgetViewController" customModule="BudgetApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9ZM-ev-6kM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="background_white.png" translatesAutoresizingMaskIntoConstraints="NO" id="rxe-SP-ERt">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="o54-De-lT1">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="separatorColor" red="0.0" green="0.58628696199999997" blue="0.53447610140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="QNX-3L-Lhe" id="4DT-hk-qPv"/>
+                                    <outlet property="delegate" destination="QNX-3L-Lhe" id="E5s-ht-eRn"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="rxe-SP-ERt" secondAttribute="trailing" id="COH-Wn-zZH"/>
+                            <constraint firstItem="rxe-SP-ERt" firstAttribute="top" secondItem="9ZM-ev-6kM" secondAttribute="top" id="LQz-4k-KtH"/>
+                            <constraint firstItem="MgR-si-sVv" firstAttribute="bottom" secondItem="rxe-SP-ERt" secondAttribute="bottom" id="QWn-XI-BpK"/>
+                            <constraint firstItem="MgR-si-sVv" firstAttribute="trailing" secondItem="o54-De-lT1" secondAttribute="trailing" id="T3l-XN-1zc"/>
+                            <constraint firstItem="MgR-si-sVv" firstAttribute="bottom" secondItem="o54-De-lT1" secondAttribute="bottom" id="XFW-sI-tns"/>
+                            <constraint firstItem="o54-De-lT1" firstAttribute="top" secondItem="MgR-si-sVv" secondAttribute="top" id="e1i-NM-MoD"/>
+                            <constraint firstItem="rxe-SP-ERt" firstAttribute="leading" secondItem="9ZM-ev-6kM" secondAttribute="leading" id="fwn-fa-GqM"/>
+                            <constraint firstItem="o54-De-lT1" firstAttribute="leading" secondItem="MgR-si-sVv" secondAttribute="leading" id="q3X-d5-oaj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="MgR-si-sVv"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Budgets" id="WEM-sg-XGu">
+                        <barButtonItem key="leftBarButtonItem" image="icons8-menu-32.png" id="Vw1-Bv-acZ">
+                            <color key="tintColor" red="0.0" green="0.58628696199999997" blue="0.53447610140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="openMenuBarButtonPressed:" destination="QNX-3L-Lhe" id="eKu-QQ-4Jz"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="icons8-add-32.png" id="5BW-B7-Boe">
+                            <color key="tintColor" red="0.0" green="0.58628696199999997" blue="0.53447610140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="addBudgetBarButtonPressed:" destination="QNX-3L-Lhe" id="zsY-If-f5i"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="addBudgetBarButton" destination="5BW-B7-Boe" id="p8a-kH-vXq"/>
+                        <outlet property="budgetTableView" destination="o54-De-lT1" id="oSh-GN-FiA"/>
+                        <outlet property="openMenuBarButton" destination="Vw1-Bv-acZ" id="MlM-Rq-dkk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e9d-kk-mCo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3324" y="-970"/>
+        </scene>
+        <!--Budget-->
+        <scene sceneID="4OA-gb-qUI">
+            <objects>
+                <navigationController title="Budget" automaticallyAdjustsScrollViewInsets="NO" id="JHV-iH-s6g" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Uhi-V9-4ye">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="QNX-3L-Lhe" kind="relationship" relationship="rootViewController" id="qY2-Yt-cSs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uTu-7v-net" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2441" y="-970"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background_white.png" width="16" height="16"/>
+        <image name="icons8-add-32.png" width="16" height="16"/>
+        <image name="icons8-menu-32.png" width="16" height="16"/>
+    </resources>
 </document>

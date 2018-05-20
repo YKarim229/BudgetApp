@@ -8,7 +8,7 @@
 
 import UIKit
 
-class InscriptionViewController: UIViewController {
+class RegistrationViewController: UIViewController {
   @IBOutlet weak var nameTextField: UITextField!
   @IBOutlet weak var name2TextField: UITextField!
   @IBOutlet weak var mailTextField: UITextField!
@@ -34,7 +34,7 @@ class InscriptionViewController: UIViewController {
 
 
 // MARK: - ViewSetupable protocol
-extension InscriptionViewController: ViewSetupable {
+extension RegistrationViewController: ViewSetupable {
   
   func setup() {
     // TODO: Implement vc initial setup
