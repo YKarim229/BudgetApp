@@ -39,6 +39,8 @@
 		E2147E94208A604400D02C86 /* UIView+NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2147E93208A604400D02C86 /* UIView+NibLoadableView.swift */; };
 		E2147E96208A605700D02C86 /* UIView+ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2147E95208A605700D02C86 /* UIView+ReusableView.swift */; };
 		E2147E98208A617200D02C86 /* Budget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2147E97208A617200D02C86 /* Budget.swift */; };
+		E249EB7B20B12E420068CF43 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E249EB7A20B12E420068CF43 /* Login.storyboard */; };
+		E249EB7D20B12E820068CF43 /* Budget.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E249EB7C20B12E820068CF43 /* Budget.storyboard */; };
 		E2550002208A70BD0010E203 /* AlertViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2550001208A70BD0010E203 /* AlertViewPresenter.swift */; };
 		E2550004208A70CF0010E203 /* AlertViewPresenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2550003208A70CF0010E203 /* AlertViewPresenterDelegate.swift */; };
 		E2550007208A71090010E203 /* NotificationName.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2550006208A71090010E203 /* NotificationName.swift */; };
@@ -106,6 +108,8 @@
 		E2147E95208A605700D02C86 /* UIView+ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+ReusableView.swift"; sourceTree = "<group>"; };
 		E2147E97208A617200D02C86 /* Budget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Budget.swift; sourceTree = "<group>"; };
 		E2345D54C72CA0276D0A0ACB /* Pods-BudgetApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BudgetApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BudgetApp/Pods-BudgetApp.debug.xcconfig"; sourceTree = "<group>"; };
+		E249EB7A20B12E420068CF43 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		E249EB7C20B12E820068CF43 /* Budget.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Budget.storyboard; sourceTree = "<group>"; };
 		E2550001208A70BD0010E203 /* AlertViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewPresenter.swift; sourceTree = "<group>"; };
 		E2550003208A70CF0010E203 /* AlertViewPresenterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewPresenterDelegate.swift; sourceTree = "<group>"; };
 		E2550006208A71090010E203 /* NotificationName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationName.swift; sourceTree = "<group>"; };
@@ -234,7 +238,9 @@
 			isa = PBXGroup;
 			children = (
 				1B101ABE207363ED002B8046 /* Main.storyboard */,
+				E249EB7C20B12E820068CF43 /* Budget.storyboard */,
 				1B101AC3207363ED002B8046 /* LaunchScreen.storyboard */,
+				E249EB7A20B12E420068CF43 /* Login.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -449,8 +455,10 @@
 			files = (
 				1B101AC5207363ED002B8046 /* LaunchScreen.storyboard in Resources */,
 				1B757C2E2089D6930000512C /* BudgetTableViewCell.xib in Resources */,
+				E249EB7B20B12E420068CF43 /* Login.storyboard in Resources */,
 				1B101AC2207363ED002B8046 /* Assets.xcassets in Resources */,
 				1B101AC0207363ED002B8046 /* Main.storyboard in Resources */,
+				E249EB7D20B12E820068CF43 /* Budget.storyboard in Resources */,
 				1B757C372089F44A0000512C /* ExpensesTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
