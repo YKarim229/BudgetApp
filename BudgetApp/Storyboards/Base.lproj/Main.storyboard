@@ -482,6 +482,46 @@
             </objects>
             <point key="canvasLocation" x="511" y="-1359"/>
         </scene>
+        <!--Home View Controller-->
+        <scene sceneID="GnM-cn-4Fc">
+            <objects>
+                <viewController id="A0U-aH-EPv" customClass="HomeViewController" customModule="BudgetApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qS7-LV-c4d">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iK0-t5-WQh">
+                                <rect key="frame" x="0.0" y="67" width="375" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UserIdLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yn4-kA-4Wm">
+                                <rect key="frame" x="13" y="33" width="349" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.58628696199999997" blue="0.53447610140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="iK0-t5-WQh" firstAttribute="top" secondItem="Yn4-kA-4Wm" secondAttribute="bottom" constant="13" id="0k4-Yd-qjA"/>
+                            <constraint firstItem="iK0-t5-WQh" firstAttribute="bottom" secondItem="nHk-F8-yNg" secondAttribute="bottom" id="CAu-Rq-TaS"/>
+                            <constraint firstItem="Yn4-kA-4Wm" firstAttribute="leading" secondItem="nHk-F8-yNg" secondAttribute="leading" constant="13" id="FdS-7l-vKM"/>
+                            <constraint firstItem="Yn4-kA-4Wm" firstAttribute="top" secondItem="nHk-F8-yNg" secondAttribute="top" constant="13" id="Gpn-Qj-m6g"/>
+                            <constraint firstItem="iK0-t5-WQh" firstAttribute="leading" secondItem="nHk-F8-yNg" secondAttribute="leading" id="NTp-N7-aJZ"/>
+                            <constraint firstItem="nHk-F8-yNg" firstAttribute="trailing" secondItem="Yn4-kA-4Wm" secondAttribute="trailing" constant="13" id="nZ7-Ax-wPY"/>
+                            <constraint firstItem="iK0-t5-WQh" firstAttribute="trailing" secondItem="nHk-F8-yNg" secondAttribute="trailing" id="pqr-2E-C8x"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nHk-F8-yNg"/>
+                    </view>
+                    <connections>
+                        <outlet property="menuItemsTableView" destination="iK0-t5-WQh" id="1zB-Rm-KsG"/>
+                        <outlet property="userIdLabel" destination="Yn4-kA-4Wm" id="5fl-Os-mEO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0N1-CX-WRK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1767" y="-1360"/>
+        </scene>
         <!--ExpensesDashboard-->
         <scene sceneID="I4c-ci-Lc1">
             <objects>

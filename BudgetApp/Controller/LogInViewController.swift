@@ -24,7 +24,6 @@ class LogInViewController: UIViewController {
 extension LogInViewController: ViewSetupable {
   
   func setup() {
-    // TODO: Implement vc initial setup
     setTextFields()
     testPlistMenuItemsLoad()
   }
