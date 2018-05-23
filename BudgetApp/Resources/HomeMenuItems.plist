@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>image</key>
+		<string>ic_dashboard.png</string>
+		<key>title</key>
+		<string>Expenses Dashboard</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>ic_dollar.png</string>
+		<key>title</key>
+		<string>Expenses</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>ic_date_range.png</string>
+		<key>title</key>
+		<string>Budget</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>ic_notifications.png</string>
+		<key>title</key>
+		<string>Thresholds</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>ic_settings.png</string>
+		<key>title</key>
+		<string>Configuration</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>ic_exit.png</string>
+		<key>title</key>
+		<string>Sign Out</string>
+	</dict>
+</array>
+</plist>

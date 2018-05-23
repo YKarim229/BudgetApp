@@ -14,7 +14,6 @@
         <!--Log In-->
         <scene sceneID="0uN-b6-s3Q">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0uZ-Uh-HuC" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController title="Log In" id="DEQ-dY-mND" customClass="LogInViewController" customModule="BudgetApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="N75-0I-sV3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -36,7 +35,7 @@
                                         <rect key="frame" x="0.0" y="35" width="321" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                 </subviews>
                             </stackView>
@@ -126,13 +125,13 @@
                         <outlet property="passwordTextField" destination="XBi-5H-Z8O" id="C89-WS-bCK"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0uZ-Uh-HuC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-260" y="-587"/>
         </scene>
         <!--Registration-->
         <scene sceneID="QWa-pg-Xuz">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fWk-ip-zAT" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController title="Registration" id="d9V-Yf-iXo" customClass="RegistrationViewController" customModule="BudgetApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uau-Dc-cCX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -236,6 +235,7 @@
                         <outlet property="passwordTextField" destination="EsF-lI-RFm" id="tzy-LK-PwQ"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fWk-ip-zAT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1038" y="187"/>
         </scene>
@@ -249,7 +249,7 @@
                         <color key="backgroundColor" red="0.0" green="0.58628696199999997" blue="0.53447610140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="separatorColor" red="0.0" green="0.58628696199999997" blue="0.53447610140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <sections>
-                            <tableViewSection footerTitle="User ID" id="fXO-v8-vRM">
+                            <tableViewSection footerTitle="User ID" id="fXO-v8-vRM" userLabel="Header Table View Section">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="150" id="oCr-46-i85">
                                         <rect key="frame" x="0.0" y="35" width="375" height="150"/>
@@ -262,7 +262,7 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection id="aN8-4W-Grj">
+                            <tableViewSection id="aN8-4W-Grj" userLabel="Items Table View Section">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="60" id="W8a-Rs-Tee" userLabel="DashboardCell">
                                         <rect key="frame" x="0.0" y="233" width="375" height="60"/>
@@ -534,6 +534,6 @@
         <image name="logo.png" width="339" height="338"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="lpH-G7-9MX"/>
+        <segue reference="gdk-Hq-rdh"/>
     </inferredMetricsTieBreakers>
 </document>
